@@ -1,0 +1,6 @@
+{
+  "name": "uLikePDF – Free Online PDF Tools (ulikepdf.com)",
+  "description": "Fast, private client-side PDF tools for ulikepdf.com. Merge, split, compress, convert, rotate, protect, and edit PDF documents directly in your browser.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,6 @@
+# Google AdSense ads.txt for ulikepdf.com
+# Replace pub-0000000000000000 with your actual AdSense Publisher ID once your account is created/approved.
+# Example:
+# google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0
+
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
