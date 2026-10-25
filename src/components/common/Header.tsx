@@ -30,15 +30,17 @@ export const Header: React.FC = () => {
     <header className="sticky top-0 z-40 w-full bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
         
-        {/* Zone 1: Brand Wordmark */}
+        {/* Zone 1: Brand Wordmark with Official 3D Logo */}
         <Link 
           to="/" 
           className="flex items-center gap-2.5 text-xl font-bold tracking-tight text-slate-900 dark:text-white whitespace-nowrap shrink-0 group"
         >
-          <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-sm group-hover:bg-blue-700 transition-colors">
-            <FileText className="w-5 h-5 stroke-[2.2]" />
-          </div>
-          <span className="font-extrabold text-slate-900 dark:text-white">
+          <img 
+            src="/assets/aistudio/ulikepdf_63161e18.png" 
+            alt="uLikePDF Logo" 
+            className="w-9 h-9 object-contain drop-shadow-xs group-hover:scale-105 transition-transform" 
+          />
+          <span className="font-extrabold text-slate-900 dark:text-white text-lg tracking-tight">
             {BRAND.prefix}<span className="text-blue-600 dark:text-blue-500">{BRAND.suffix}</span>
           </span>
         </Link>

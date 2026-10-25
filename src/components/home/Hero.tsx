@@ -58,7 +58,7 @@ export const Hero: React.FC<HeroProps> = ({ onSearchChange }) => {
                 value={searchQuery}
                 onChange={handleInputChange}
                 placeholder={t('hero.search_placeholder', 'Search tools: Merge, Split, Compress, JPG to PDF, Watermark...')}
-                className="w-full pl-12 pr-28 py-4 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 rounded-2xl shadow-sm text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-hidden focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
+                className="w-full pl-12 pr-28 py-4 bg-white dark:bg-slate-900 border border-blue-200/80 dark:border-blue-900/40 rounded-2xl gemini-glow text-sm text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-hidden focus:ring-2 focus:ring-blue-600 focus:border-transparent transition-all"
               />
               <button
                 type="submit"

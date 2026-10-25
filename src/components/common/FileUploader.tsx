@@ -121,10 +121,10 @@ export const FileUploader: React.FC<FileUploaderProps> = ({
           onDragLeave={handleDragLeave}
           onDrop={handleDrop}
           onClick={() => fileInputRef.current?.click()}
-          className={`relative group cursor-pointer border-2 border-dashed rounded-2xl p-10 md:p-14 text-center transition-all duration-150 ${
+          className={`relative group cursor-pointer border-2 border-dashed rounded-2xl p-10 md:p-14 text-center transition-all duration-200 gemini-box ${
             isDragging
               ? 'border-blue-600 bg-blue-50/70 dark:bg-blue-950/30 ring-4 ring-blue-500/20'
-              : 'border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900/60 hover:border-blue-500 dark:hover:border-blue-500 hover:bg-slate-50/50 dark:hover:bg-slate-800/40'
+              : 'border-slate-300 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-500'
           }`}
         >
           <input

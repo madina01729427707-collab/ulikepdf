@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --app-font: 'Inter', system-ui, -apple-system, sans-serif;
   }
 
   html {
@@ -14,7 +14,7 @@
   }
 
   body {
-    font-family: var(--font-sans);
+    font-family: var(--app-font);
     /* Soft soothing gray-white background to prevent eye glare */
     background-color: #f8fafc;
     color: #0f172a;
@@ -27,6 +27,51 @@
     background-color: #0b0f19;
     color: #f1f5f9;
   }
+}
+
+/* Google Gemini-style subtle luminous blue aura drop shadow on cards and boxes */
+.gemini-card,
+.gemini-box {
+  background-color: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  box-shadow: 0 4px 20px -2px rgba(59, 130, 246, 0.08),
+              0 2px 6px -1px rgba(37, 99, 235, 0.05),
+              0 0 0 1px rgba(96, 165, 250, 0.07);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gemini-card:hover {
+  border-color: rgba(96, 165, 250, 0.5);
+  box-shadow: 0 10px 30px -4px rgba(59, 130, 246, 0.18),
+              0 4px 12px -2px rgba(37, 99, 235, 0.1),
+              0 0 0 1px rgba(59, 130, 246, 0.22);
+  transform: translateY(-2px);
+}
+
+.gemini-glow {
+  box-shadow: 0 8px 32px -4px rgba(59, 130, 246, 0.14),
+              0 0 0 1px rgba(96, 165, 250, 0.12);
+}
+
+.dark .gemini-card,
+.dark .gemini-box {
+  background-color: #0f172a;
+  border-color: rgba(59, 130, 246, 0.2);
+  box-shadow: 0 4px 24px -2px rgba(37, 99, 235, 0.16),
+              0 0 15px -3px rgba(96, 165, 250, 0.1),
+              0 0 0 1px rgba(59, 130, 246, 0.18);
+}
+
+.dark .gemini-card:hover {
+  border-color: rgba(96, 165, 250, 0.6);
+  box-shadow: 0 12px 36px -4px rgba(59, 130, 246, 0.3),
+              0 0 24px -2px rgba(96, 165, 250, 0.22),
+              0 0 0 1px rgba(96, 165, 250, 0.4);
+}
+
+.dark .gemini-glow {
+  box-shadow: 0 10px 36px -4px rgba(59, 130, 246, 0.25),
+              0 0 20px -2px rgba(96, 165, 250, 0.15);
 }
 
 /* Scrollbar refinement */

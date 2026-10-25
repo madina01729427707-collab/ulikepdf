@@ -74,10 +74,17 @@ export const Footer: React.FC = () => {
         {/* Links Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8 mb-12">
           
-          {/* Brand Column */}
+          {/* Brand Column with Official 3D Logo */}
           <div className="col-span-2 lg:col-span-2 space-y-4">
-            <Link to="/" className="text-lg font-bold text-slate-900 dark:text-white">
-              {BRAND.prefix}<span className="text-blue-600">{BRAND.suffix}</span>
+            <Link to="/" className="inline-flex items-center gap-2.5 text-lg font-bold text-slate-900 dark:text-white group">
+              <img 
+                src="/assets/aistudio/ulikepdf_63161e18.png" 
+                alt="uLikePDF Logo" 
+                className="w-8 h-8 object-contain drop-shadow-xs group-hover:scale-105 transition-transform" 
+              />
+              <span className="font-extrabold text-slate-900 dark:text-white">
+                {BRAND.prefix}<span className="text-blue-600 dark:text-blue-500">{BRAND.suffix}</span>
+              </span>
             </Link>
             <p className="text-sm text-slate-500 dark:text-slate-400 max-w-sm leading-relaxed">
               {t('footer.tagline', 'Fast, high-fidelity PDF manipulation tools running entirely in modern web browsers. Designed for professionals, students, and businesses worldwide.')}

@@ -41,7 +41,7 @@ export const DownloadCard: React.FC<DownloadCardProps> = ({
   };
 
   return (
-    <div className="w-full max-w-lg mx-auto p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm text-center space-y-6 animate-in fade-in">
+    <div className="w-full max-w-lg mx-auto p-8 rounded-2xl gemini-card text-center space-y-6 animate-in fade-in">
       {/* Success Badge */}
       <div className="w-16 h-16 mx-auto rounded-2xl bg-emerald-50 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
         <CheckCircle2 className="w-8 h-8" />

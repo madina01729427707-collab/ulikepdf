@@ -179,7 +179,7 @@ export const ToolGrid: React.FC<ToolGridProps> = ({ searchQuery = '' }) => {
                 <Link
                   key={tool.id}
                   to={tool.path}
-                  className="group relative flex flex-col justify-between p-6 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200/90 dark:border-slate-800 hover:border-blue-500/80 dark:hover:border-blue-500/80 shadow-xs hover:shadow-md transition-all duration-150"
+                  className="group relative flex flex-col justify-between p-6 rounded-2xl gemini-card hover:border-blue-500/80 transition-all duration-200"
                 >
                   <div className="space-y-4">
                     {/* Icon & Unboxed Category */}

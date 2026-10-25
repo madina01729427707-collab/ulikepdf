@@ -965,7 +965,7 @@ export const ToolView: React.FC<{ toolSlug?: string }> = ({ toolSlug }) => {
 
             {/* Tool-Specific Options Panel */}
             {files.length > 0 && (
-              <div className="p-6 rounded-2xl bg-slate-50 dark:bg-slate-800/40 border border-slate-200/80 dark:border-slate-700/80 space-y-6">
+              <div className="p-6 rounded-2xl gemini-card space-y-6">
                 <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-slate-700 dark:text-slate-300">
                   <SlidersHorizontal className="w-4 h-4 text-blue-600" />
                   <span>{t('uploader.settings', 'Operation Settings')}</span>
